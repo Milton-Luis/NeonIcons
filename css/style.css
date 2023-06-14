@@ -1,0 +1,99 @@
+:root {
+    --bk-color: #000;
+    --color-01: #ff0000;
+    --color-02: #0000ff;
+    --color-03: #41e2ff;
+    --color-04: #ad25ec;
+}
+
+body {
+    background-color: var(--bk-color);
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style: none;
+}
+
+img {
+    max-width: 60px;
+}
+
+.instagram-icon {
+    animation: firstColor .5s infinite alternate;
+}
+
+.facebook-icon {
+    animation: secondColor .5s infinite alternate;
+}
+
+.twitter-icon {
+    animation: thirdColor .5s infinite alternate;
+}
+
+.mail-icon {
+    animation: fourthColor .5s infinite alternate;
+}
+
+
+@keyframes firstColor {
+    0% {
+        filter: drop-shadow(0 0 3px var(--color-01)) 
+        drop-shadow(0 0 5px var(--color-01));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 3px var(--color-01)) 
+        drop-shadow(0 0 5px var(--color-01)) 
+        drop-shadow(0 0 20px var(--color-01));
+    }
+}
+
+@keyframes secondColor {
+    0% {
+        filter: drop-shadow(0 0 3px var(--color-02)) 
+        drop-shadow(0 0 5px var(--color-02));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 3px var(--color-02)) 
+        drop-shadow(0 0 5px var(--color-02)) 
+        drop-shadow(0 0 20px var(--color-02));
+    }
+}
+
+@keyframes thirdColor {
+    0% {
+        filter: drop-shadow(0 0 3px var(--color-03)) 
+        drop-shadow(0 0 5px var(--color-03));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 3px var(--color-03)) 
+        drop-shadow(0 0 5px var(--color-03)) 
+        drop-shadow(0 0 20px var(--color-03));
+    }
+}
+
+@keyframes fourthColor {
+    0% {
+        filter: drop-shadow(0 0 3px var(--color-04)) 
+        drop-shadow(0 0 5px var(--color-04));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 3px var(--color-04)) 
+        drop-shadow(0 0 5px var(--color-04)) 
+        drop-shadow(0 0 20px var(--color-04));
+    }
+}
